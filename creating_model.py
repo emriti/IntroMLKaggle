@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 
 # Load data
-melbourne_file_path = './input/melbourne-housing-snapshot/melb_data.csv'
+melbourne_file_path = 'input/melbourne-housing-snapshot/melb_data.csv'
 melbourne_data = pd.read_csv(melbourne_file_path) 
 # Filter rows with missing price values
 filtered_melbourne_data = melbourne_data.dropna(axis=0)
@@ -26,6 +26,7 @@ print(X.head())
 print("The prediction are ...")
 print(melbourne_model.predict(X.head()))
 
+### DEL.ME
 test_data = [(2, 1.0, 156.0, -37.8079, 144.9934)]
 test_data = np.array(test_data)
 
